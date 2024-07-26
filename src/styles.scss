@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+@import './fonts.scss';
+
+/*Colors*/
+$redColor: #E15544;
+$turkuoiseColor: #02F4BF;
+$bgMainColor:#120B35;
+
+body{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 1440px;
+  padding: 0 64px;
+  font-family: 'Roboto Mono';
+  background-color: $bgMainColor;
+  color:$turkuoiseColor;
+}
+
+
+
+.d-flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.divider{
+  width: 2px;
+  height: 18px;
+}
+

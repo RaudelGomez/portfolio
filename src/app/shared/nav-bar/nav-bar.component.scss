@@ -1,0 +1,29 @@
+@import '../../../styles.scss';
+
+nav{
+  height: 92px;
+  padding: 0 24px;
+  color: $redColor;
+  font-size: 22px;
+  font-weight: 500;
+  @extend .d-flex-center;
+  article{
+    @extend .d-flex-center;
+  }
+}
+
+.left-icons{
+  gap: 48px;
+  div{
+    @extend .d-flex-center;
+    gap: 32px;
+  }
+}
+
+.right-icons{
+  gap: 6px;
+  div{
+    background-color: $redColor;
+  }
+}
+
