@@ -1,11 +1,23 @@
-@import '../../../styles.scss';
+@import '../../../helper.scss';
+
+.color-change{
+  color: $turkuoiseColor;
+  transition: color 125ms ease-in-out;
+}
 
 nav{
   height: 92px;
-  padding: 0 24px;
+  padding: 0 88px;
   color: $redColor;
   font-size: 22px;
   font-weight: 500;
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  background-color: $bgMainColor;
   @extend .d-flex-center;
   article{
     @extend .d-flex-center;
@@ -17,13 +29,20 @@ nav{
   div{
     @extend .d-flex-center;
     gap: 32px;
+    a:hover{
+      @extend .color-change;
+    }
   }
 }
 
 .right-icons{
   gap: 6px;
+  a:hover{
+    @extend .color-change;
+  };
   div{
     background-color: $redColor;
   }
 }
+
 
